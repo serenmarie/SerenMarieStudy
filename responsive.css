@@ -1,0 +1,15 @@
+@media (max-width: 980px) {
+  body{
+    padding-bottom: 280.5px;
+  }
+  /*body*/
+
+  /*footer*/
+  #footerIndex{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #tFooterIndexDesc{
+    margin-right: 0;
+  }
+}

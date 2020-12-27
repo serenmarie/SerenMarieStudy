@@ -1,0 +1,303 @@
+:root{
+
+}
+*{
+  box-sizing: border-box;
+}
+p, ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
+button, input{
+  border: none;
+  outline: none;
+}
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: #ffffff;
+	border-radius: 0px;
+}
+::-webkit-scrollbar-track {
+	background: #1a1a1a;
+	margin: 0 0;
+}
+/*----------------------------------------------------------------------------*/
+body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 266px; /* Altura del footer */
+  background: #1a1a1a;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+/* header */
+#headerIndex{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#sHeaderIndex{
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+  width: 97%;
+}
+#sHeaderIndex > button{
+  width: 125px;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #000000;
+}
+#sHeaderIndex > button:hover{
+  background: #fa7a7f;
+  color: #ffffff;
+  transition: background-color .3s ease-in-out;
+}
+#tHeaderIndex{
+  display: flex;
+  padding: 10px 0;
+  width: 100%;
+}
+#tHeaderIndex > p {
+  margin-right: 20px;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+#tHeaderIndex > p > a{
+  padding: 10px 0;
+  color: #ffffff;
+}
+#tHeaderIndex > nav{
+  display: flex; /* Se puede desactivar sin problemas no afecta en 'nada' */
+}
+#tHeaderIndex > nav > ul{
+  display: flex;
+  align-self: center;
+}
+#tHeaderIndex > nav > ul > li{
+  margin-left: 30px;
+  /* display: flex; Si se activa entonces el padding del link empieza a contar */
+  position: relative;
+}
+#tHeaderIndex > nav > ul > li > a{
+  padding-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 0px;
+  color: #888888;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+#tHeaderIndex > nav > ul > li > a:hover{
+  text-decoration: underline;
+  color: #ffffff;
+}
+#tHeaderIndex > nav > ul > li:hover .tHeaderIndexSubMenu{
+  display: flex;
+}
+#tHeaderIndex > nav > ul > li:hover .tHeaderIndexMenu{
+  color: #ffffff;
+  text-decoration: underline;
+}
+.tHeaderIndexSubMenu{
+  margin-left: -15px;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  border-top: 2px solid #ffffff;
+  border-right:2px solid #fa7a7f;
+  border-bottom:2px solid #fa7a7f;
+  border-left: 2px solid #ffffff;
+  border-radius: 5px;
+  background: #1a1a1a;
+  box-shadow: 4px 5px #fa7a7f;
+  animation: menuMove .25s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 100;
+}
+.tHeaderIndexSubMenu > li > a{
+  display: flex; /*Para que el link sea el 100%*/
+  padding: 10px 40px 10px 15px;
+  color: #888888;
+}
+.tHeaderIndexSubMenu > li > a:hover{
+  background: #fa7a7f;
+  color: #ffffff;
+}
+/* body */
+
+.bodyIndexContent{
+  margin: auto;
+  display: flex;
+  padding-top: 75px;
+  max-width: 1200px;
+  justify-content: center;
+}
+.bodyIndexContentCard{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px calc(25px - 4px) 20px; /*30 del padding y 12.5px del margin-bottom*/
+  width: 500px;
+  border: 2px solid #fa7a7f;
+  border-radius: 5px;
+}
+.bodyIndexContentCardTitle{
+  margin-left: 2.5px;  /*El paddinng de title -(10px - 12.5px) */
+  margin-top: -26px; /* 20 px padding mas 1/2 px del borde*/
+  position: absolute;
+  padding: 0 10px;
+  background: #1a1a1a;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  transform: translate(0,-50%);
+}
+.bodyIndexContentCardInfo{
+  display: flex;
+  flex-direction: column; /*Para que el link ocupe el 100% del p*/
+  border-radius: 3px;
+}
+.bodyIndexContentCardInfo:hover{
+  background: #3a3b3c;
+}
+.bodyIndexContentCardInfo > a{
+  padding: 10px 0 10px 12.5px;
+  color: #888888;
+}
+.bodyIndexContentCardInfo > a:hover{
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#footerIndex{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  display: flex; /*!important*/
+  padding: 50px 1.5% 0 1.5%;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+}
+#sFooterIndex{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+#tFooterIndex{
+  display: flex;
+  padding-bottom: 25px; /* calc(50px - 12.5px);  margin-bottom de los li*/
+  border-bottom: 1px solid rgba(151,151,151,0.5);
+}
+#tFooterIndexDesc{
+  margin-right: 75px;
+  display: flex;
+  flex-direction: column;
+}
+#tFooterIndexDescTitle{
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 12.5px;
+}
+#tFooterIndexDescInfo{
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  color: #888888;
+}
+#tFooterIndexDescSuscribe{
+  display: flex;
+}
+#tFooterIndexDescSuscribe > input{
+  padding: 8px 5px;
+  background: #1a1a1a;
+  color: #ffffff;
+  width: 250px;
+  border-top:1px solid #888888;
+  border-bottom: 1px solid #888888;
+  border-left: 1px solid #888888;
+}
+#tFooterIndexDescSuscribe > input::placeholder{
+  color: #888888;
+}
+#tFooterIndexDescSuscribe > input:focus {
+  border-top:1px solid #f9f9f9;
+  border-bottom: 1px solid #f9f9f9;
+  border-left: 1px solid #f9f9f9;
+}
+#tFooterIndexDescSuscribe > button{
+  width: 100px;
+  background: #f9f9f9;
+  color: #000000;
+  border-top:1px solid #f9f9f9;
+  border-right:1px solid #f9f9f9;
+  border-bottom:1px solid #f9f9f9;
+}
+#tFooterIndexAbout{
+  display: flex;
+  align-self: center;
+}
+.tFooterIndexAboutCard{
+  margin-left: 50px;
+}
+.tFooterIndexAboutCard > p{
+  font-weight: 600;
+}
+.tFooterIndexAboutCard > p, .tFooterIndexAboutCard > ul > li{
+  margin-bottom: 12.5px;
+}
+.tFooterIndexAboutCard > ul > li > a{
+  color: #888888;
+}
+.tFooterIndexAboutCard > ul > li > a:hover{
+  color: #f9f9f9;
+  transition: .25s;
+}
+#tsFooterIndex{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+/* keyframes */
+  /*menu*/
+@keyframes menuMove {
+  from {
+    top: 60px;
+    opacity: 20%;
+  }
+  to {
+    top: 48px;
+    opacity: 100%;
+  }
+}
+/* +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+
+ |S||e||r||e||n||M||a||r||i||e||S||t||u||d||y|
+ +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+ */

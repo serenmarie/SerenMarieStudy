@@ -1,0 +1,173 @@
+/*
+  _______                   _       _
+ |__   __|                 | |     | |
+    | | ___ _ __ ___  _ __ | | __ _| |_ ___
+    | |/ _ \ '_ ` _ \| '_ \| |/ _` | __/ _ \
+    | |  __/ | | | | | |_) | | (_| | ||  __/
+    |_|\___|_| |_| |_| .__/|_|\__,_|\__\___|
+                     | |
+                     |_|
+*/
+#tHeaderIndex > nav > ul > li:hover .tHeaderIndexSubMenuTemplate{
+  display: flex;
+}
+.tHeaderIndexSubMenuTemplate{
+  margin-left: -15px;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  border-top: 2px solid #ffffff;
+  border-right:2px solid #ffffff;
+  border-bottom:2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-radius: 5px;
+  background: #1a1a1a;
+  box-shadow: 4px 5px #ffffff;
+  animation: menuMove .25s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 100;
+}
+.tHeaderIndexSubMenuTemplate > li > a{
+  display: flex; /*Para que el link sea el 100%*/
+  padding: 10px 40px 10px 15px;
+  color: #888888;
+}
+.tHeaderIndexSubMenuTemplate > li > a:hover{
+  background: #ffffff;
+  color: #000000;
+}
+/* body*/
+.bodyTemplate{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#bodyTemplateTitle{
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  background: #fa7a7f;
+  color: #ffffff;
+  font-size: 48px;
+}
+.bodyTemplateContent{
+  font-family: 'Inter', sans-serif;
+  margin: auto;
+  padding: 50px 25px;
+  max-width: 900px;
+}
+.bodyTemplateContentTitle{
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 21px;
+}
+.bodyTemplateContentP{
+  margin-bottom: 30px;
+  line-height: 1.8em;
+}
+#bodyTemplateContentOption{
+  margin-top: 30px;
+  font-size: 14px;
+}
+#bodyTemplateContentOptionOne{
+  border-top: 1px solid #f3f4f4;
+  border-bottom: 1px solid #f3f4f4;
+}
+#bodyTemplateContentOptionOne > p{
+  padding: 15px 0;
+}
+#bodyTemplateContentOptionTwo{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+#bodyTemplateContentOptionTwoView{
+  align-self: center;
+}
+#bodyTemplateContentOptionTwoLike{
+  display: flex;
+}
+#bodyTemplateContentOptionTwoLike > p{
+  align-self: center;
+  margin-right: 5px;
+}
+#bodyTemplateContentOptionTwoLike > a{
+  display: flex;
+  background: url(img/bookmarks.png) no-repeat;
+  width: 28px;
+  height: 28px;
+  background-size: 100% 100%;
+}
+/*
+ _____            _             _
+/ ____|          | |           | |
+| |     ___  _ __ | |_ ___ _ __ | |_
+| |    / _ \| '_ \| __/ _ \ '_ \| __|
+| |___| (_) | | | | ||  __/ | | | |_
+\_____\___/|_| |_|\__\___|_| |_|\__|
+*/
+#bodyTheme{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  padding: 50px;
+  margin: auto;
+}
+#bodyTheme > p{
+  margin-bottom: 32px;
+  color: #ffffff;
+  font-size: 32px;
+}
+#bodyTheme > p > span{
+  color: #fa7a7f;
+}
+.bodyThemeContent{
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  max-width: 900px;
+  border: 2px solid #fa7a7f;
+  border-radius: 5px;
+}
+.bodyThemeContent > p {
+  position: absolute;
+  transform: translate(0,-50%);
+  top: -2px;
+  right: 30px;
+  padding: 5px 12.5px;
+  background: #1a1a1a;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.bodyThemeContentBox > p{
+  margin-bottom: 5px;
+}
+.bodyThemeContentBox > p > a{
+  display: flex;
+  padding: 9px 3px;
+  color: #888888;
+}
+.bodyThemeContentBox > p > a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
