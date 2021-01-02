@@ -128,13 +128,13 @@ body{
   animation: menuMove .25s;
   animation-fill-mode: forwards;
   opacity: 0;
-  overflow: hidden;
   z-index: 100;
 }
 .tHeaderIndexSubMenu > li > a{
   display: flex; /*Para que el link sea el 100%*/
   padding: 10px 40px 10px 15px;
   color: #888888;
+  border-radius: 2px;
 }
 .tHeaderIndexSubMenu > li > a:hover{
   background: #fa7a7f;

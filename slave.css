@@ -111,7 +111,7 @@
 #bodyTheme{
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 1200px; /*900 or 1200*/
   padding: 50px;
   margin: auto;
 }
@@ -127,9 +127,8 @@
   margin-bottom: 50px;
   position: relative;
   display: flex;
-  justify-content: space-around;
   padding: 15px;
-  max-width: 900px;
+  max-width: 100%;
   border: 2px solid #fa7a7f;
   border-radius: 5px;
 }
@@ -143,6 +142,9 @@
   font-size: 22px;
   text-transform: uppercase;
 }
+.bodyThemeContentBox{
+  margin-right: 15px;
+}
 .bodyThemeContentBox > p{
   margin-bottom: 5px;
 }
@@ -154,11 +156,6 @@
 .bodyThemeContentBox > p > a:hover{
   text-decoration: underline;
 }
-
-
-
-
-
 
 
 
