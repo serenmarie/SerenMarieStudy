@@ -8,13 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="slave.css">
     <link rel="stylesheet" href="responsive.css">
   </head>
   <body>
     <header id="headerIndex">
       <div id="sHeaderIndex">
         <div id="tHeaderIndex">
-          <p><a href="#">SerenMarieStudy</a></p>
+          <p><a href="index.html">SerenMarieStudy</a></p>
           <nav>
             <ul>
               <li>
@@ -33,7 +34,7 @@
               </li>
               <li><a href="#">eBooks</a></li>
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="clip.html">Clipboard</a></li>
+              <li><a id="tHeaderIndexSelected" href="#">Clipboard</a></li>
             </ul>
           </nav>
         </div>
@@ -41,14 +42,15 @@
       </div>
     </header>
     <div id="bodyIndex">
-      <div class="bodyIndexContent">
-        <div class="bodyIndexContentCard">
-          <p class="bodyIndexContentCardTitle">Grado Superior (Grado: DAW)</p>
-          <p class="bodyIndexContentCardInfo"><a href="theme.html">Apuntes</a></p>
-          <p class="bodyIndexContentCardInfo"><a href="">Examenes [DISABLED]</a></p>
-          <p class="bodyIndexContentCardInfo"><a href="">Ejercicios [DISABLED]</a></p>
+        <div id="bodyChat">
+          <div id="bodyChatSen">
+            <textarea id="bodyChatSenTexAr"></textarea>
+            <input id="postSubmit" type="submit" value="Submit">
+          </div>
+          <div id="bodyChatHis">
+            <pre id="bodyChatHisMes"></pre>
+          </div>
         </div>
-      </div>
     </div>
     <footer id="footerIndex">
       <div id="sFooterIndex">
@@ -99,5 +101,12 @@
         </div>
       </div>
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>

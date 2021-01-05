@@ -21,14 +21,15 @@ button, input{
   border: none;
   outline: none;
 }
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
 	width: 5px;
+  height: 4px;
 }
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
 	background: #ffffff;
 	border-radius: 0px;
 }
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
 	background: #1a1a1a;
 	margin: 0 0;
 }
@@ -98,13 +99,16 @@ body{
   padding-bottom: 30px;
   padding-right: 15px;
   padding-left: 0px;
-  color: #888888;
+  color: #999999;
   font-size: 14px;
   font-family: 'Inter', sans-serif;
 }
 #tHeaderIndex > nav > ul > li > a:hover{
   text-decoration: underline;
   color: #ffffff;
+}
+#tHeaderIndexSelected{
+  color: #fa7a7f !important;
 }
 #tHeaderIndex > nav > ul > li:hover .tHeaderIndexSubMenu{
   display: flex;
@@ -141,7 +145,6 @@ body{
   color: #ffffff;
 }
 /* body */
-
 .bodyIndexContent{
   margin: auto;
   display: flex;
@@ -183,20 +186,6 @@ body{
 .bodyIndexContentCardInfo > a:hover{
   color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 #footerIndex{
   bottom: 0;

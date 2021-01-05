@@ -32,7 +32,7 @@
 .tHeaderIndexSubMenuTemplate > li > a{
   display: flex; /*Para que el link sea el 100%*/
   padding: 10px 40px 10px 15px;
-  color: #888888;
+  color: #999999;
 }
 .tHeaderIndexSubMenuTemplate > li > a:hover{
   background: #ffffff;
@@ -66,6 +66,21 @@
 .bodyTemplateContentP{
   margin-bottom: 30px;
   line-height: 1.8em;
+}
+.bodyTemplateContentP > ul > li{
+  list-style: square inside;
+}
+.bodyTemplateContentP > ul > li > a, .bodyTemplateContentP > ul > li > ul > li > a {
+  color: rgba(145, 145, 145, 1);
+}
+.bodyTemplateContentP > ul > li > ul > li{
+  list-style: circle;
+}
+.bodyTemplateContentP > ul > li > a:hover, .bodyTemplateContentP > ul > li > ul > li > a:hover{
+  text-decoration: underline;
+}
+.bodyTemplateContentP > ul > li > ul > li {
+  margin-left: 50px;
 }
 #bodyTemplateContentOption{
   margin-top: 30px;
@@ -101,12 +116,16 @@
   background-size: 100% 100%;
 }
 /*
- _____            _             _
-/ ____|          | |           | |
-| |     ___  _ __ | |_ ___ _ __ | |_
-| |    / _ \| '_ \| __/ _ \ '_ \| __|
-| |___| (_) | | | | ||  __/ | | | |_
-\_____\___/|_| |_|\__\___|_| |_|\__|
+
+ /$$$$$$$$ /$$
+|__  $$__/| $$
+   | $$   | $$$$$$$   /$$$$$$  /$$$$$$/$$$$   /$$$$$$
+   | $$   | $$__  $$ /$$__  $$| $$_  $$_  $$ /$$__  $$
+   | $$   | $$  \ $$| $$$$$$$$| $$ \ $$ \ $$| $$$$$$$$
+   | $$   | $$  | $$| $$_____/| $$ | $$ | $$| $$_____/
+   | $$   | $$  | $$|  $$$$$$$| $$ | $$ | $$|  $$$$$$$
+   |__/   |__/  |__/ \_______/|__/ |__/ |__/ \_______/
+
 */
 #bodyTheme{
   display: flex;
@@ -151,11 +170,146 @@
 .bodyThemeContentBox > p > a{
   display: flex;
   padding: 9px 3px;
-  color: #888888;
+  color: #999999;
 }
 .bodyThemeContentBox > p > a:hover{
   text-decoration: underline;
 }
+/*
+ /$$$$$$$  /$$
+| $$__  $$| $$
+| $$  \ $$| $$  /$$$$$$   /$$$$$$
+| $$$$$$$ | $$ /$$__  $$ /$$__  $$
+| $$__  $$| $$| $$  \ $$| $$  \ $$
+| $$  \ $$| $$| $$  | $$| $$  | $$
+| $$$$$$$/| $$|  $$$$$$/|  $$$$$$$
+|_______/ |__/ \______/  \____  $$
+                         /$$  \ $$
+                        |  $$$$$$/
+                         \______/
+*/
+
+#bodyBlog{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px; /*900 or 1200*/
+  padding: 50px;
+  margin: auto;
+}
+.bodyBlogPost{
+  position: relative;
+  margin-bottom: 50px;
+  padding: 25px;
+  width: 100%;
+  border-left: 8px solid #fa7a7f;
+  /* border-right: 8px solid transparent; */
+}
+.bodyBlogPostTitle{
+  font-size: 27px;
+  font-weight: 600;
+}
+.bodyBlogPostTitle > a {
+  color: #ffffff;
+}
+.bodyBlogPostImg{
+  margin: 20px 0;
+  height: 200px;
+  width: 100%;
+  background: url(img/web.jpg) center;
+}
+.bodyBlogPostDesc{
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8em;
+}
+.bodyBlogPostProperties{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 12px 0; */
+  padding-top: 12px;
+  border-top: 1px solid #f3f4f4;
+  /* border-bottom: 1px solid #f3f4f4; */
+}
+/*
+
+  /$$$$$$  /$$ /$$           /$$$$$$$                                      /$$
+ /$$__  $$| $$|__/          | $$__  $$                                    | $$
+| $$  \__/| $$ /$$  /$$$$$$ | $$  \ $$  /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$$
+| $$      | $$| $$ /$$__  $$| $$$$$$$  /$$__  $$ |____  $$ /$$__  $$ /$$__  $$
+| $$      | $$| $$| $$  \ $$| $$__  $$| $$  \ $$  /$$$$$$$| $$  \__/| $$  | $$
+| $$    $$| $$| $$| $$  | $$| $$  \ $$| $$  | $$ /$$__  $$| $$      | $$  | $$
+|  $$$$$$/| $$| $$| $$$$$$$/| $$$$$$$/|  $$$$$$/|  $$$$$$$| $$      |  $$$$$$$
+ \______/ |__/|__/| $$____/ |_______/  \______/  \_______/|__/       \_______/
+                  | $$
+                  | $$
+                  |__/
+*/
+#bodyChat{
+  max-width: 1300px;
+  margin: auto;
+  padding: 50px 50px;
+}
+#bodyChatHis{
+  width: 100%;
+}
+#bodyChatHisMes{
+  width: 100%;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#bodyChatHisMes > li{
+  margin-bottom: 25px;
+  padding: 10px 10px 10px 25px;
+  border-radius: 5px;
+  background: #3a3b3c;
+  border-left: 5px solid #fa7a7f;
+  overflow-x: scroll;
+}
+#bodyChatHisMes > li::-webkit-scrollbar{
+  background: transparent;
+  height: 0px;
+}
+#bodyChatSen{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#bodyChatSen > textarea{
+  padding: 5px;
+  width: 80%;
+  outline: none;
+  border: none;
+  resize: none;
+  min-height: 50px;
+	max-height: 50vh;
+}
+#postSubmit{
+  width: 20%;
+  color: #ffffff;
+  background: #fa7a7f;
+}
+#postSubmit:hover{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
