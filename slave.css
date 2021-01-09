@@ -267,16 +267,34 @@
   border-left: 5px solid #fa7a7f;
   overflow-x: scroll;
 }
+.messagesIn{
+  font-family: 'Inter',sans-serif;
+  font-size: 13px;
+}
+.messagesIn::selection{
+  background: #1a1a1a;
+}
 #bodyChatHisMes > li > button{
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background: black;
+  right: 0;
+  height: 44px;
+  width: 80px;
+  background: transparent;
+  color: #ffffff;
+  opacity: 0;
+  border-bottom-left-radius: 9px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: opacity 0.155s;
+  /* font-family: 'Inter', sans-serif; */
+}
+#bodyChatHisMes > li > button:hover{
+  text-decoration: underline;
+  color: #fa7a7f;
 }
 #bodyChatHisMes > li::-webkit-scrollbar{
-  background: transparent;
+  background: grey;
   height: 0px;
 }
 #bodyChatSen{
@@ -303,8 +321,10 @@
 #postSubmit:hover{
   cursor: pointer;
 }
-
-
+#bodyChatHisMes > li:hover .buttonShow{
+  opacity: 100%;
+  transition: opacity 0.05s;
+}
 
 
 

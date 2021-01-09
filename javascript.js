@@ -34,9 +34,58 @@ button.addEventListener("click", function(){
         messages.innerHTML = '';
         querySnapshot.forEach((doc) => {
             // console.log(`${doc.id} => ${doc.data().info}`);
-             messages.innerHTML += `
-             <button>Text</button>
-             <li>${doc.data().info}</li>
-             `
+             messages.innerHTML += `<li><button class="buttonShow">Copy</button><div class="messagesIn">${doc.data().info}</div></li>`
+            //  var buttonShowJ = document.getElementsByClassName("buttonShow");
+            //  var i = 0;
+            //  while( i < buttonShowJ.length){
+            //    buttonShowJ[i].style.fontFamily = "Inter";
+            //    i++;
+            // }
         });
     });
+    //
+    var delayBecauseFirebase = 1000 ;
+    function sendText(){
+      // var messagesInJ = document.getElementsByClassName("messagesIn");
+      // var info = messagesInJ[1].innerText; //Here you have your text
+      // var range = document.createRange();
+      //
+      // range.selectNode(messagesInJ[1]);
+      // window.getSelection().removeAllRanges();
+      // window.getSelection().addRange(range);
+      // console.log(messagesInJ);
+      //
+      // document.execCommand("copy");
+      // console.log("Hello " + who);
+    }
+    var who = 0;
+    var buttonShowJ = document.getElementsByClassName("buttonShow");
+    function addClickListener() {
+      // if(buttonShowJ){
+      //   var i = 0;
+      //   while( i < buttonShowJ.length){
+      //     buttonShowJ[i].addEventListener("click", sendText);
+      //     who = i;
+      //     i++;
+      //  }
+      // }else{
+      //   console.error("Copy button not found");
+      // }
+    }
+    setTimeout(addClickListener, delayBecauseFirebase);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //

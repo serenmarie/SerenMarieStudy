@@ -1,6 +1,25 @@
 @media (max-width: 980px) {
   body{
-    padding-bottom: 280.5px;
+    padding-bottom: 418.5px;
+  }
+  #tHeaderIndex > nav {
+    display: none;
+  }
+  #tFooterIndex{
+    flex-direction: column;
+  }
+  #tFooterIndexDescSuscribe{
+    margin-bottom: 40px;
+  }
+  #tFooterIndexAbout{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .tFooterIndexAboutCard{
+    margin-left: 0;
+  }
+  .tFooterIndexAboutCard{
+    text-align: center;
   }
   /*body*/
 
@@ -12,4 +31,7 @@
   #tFooterIndexDesc{
     margin-right: 0;
   }
+}
+@media (max-width: 750px){
+
 }
