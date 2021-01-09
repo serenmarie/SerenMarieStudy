@@ -34,6 +34,9 @@ button.addEventListener("click", function(){
         messages.innerHTML = '';
         querySnapshot.forEach((doc) => {
             // console.log(`${doc.id} => ${doc.data().info}`);
-             messages.innerHTML += `<li>${doc.data().info}</li>`
+             messages.innerHTML += `
+             <button>Text</button>
+             <li>${doc.data().info}</li>
+             `
         });
     });
