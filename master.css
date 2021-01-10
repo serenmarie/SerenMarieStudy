@@ -145,13 +145,17 @@ body{
   color: #ffffff;
 }
 /* body */
+#bodyIndex{
+  min-height: calc(100vh - 66px);
+}
 .bodyIndexContent{
   margin: auto;
   display: flex;
   padding-top: 75px;
   padding-bottom: 75px;
   max-width: 1200px;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .bodyIndexContentCard{
   position: relative;

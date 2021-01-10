@@ -55,7 +55,7 @@
 .bodyTemplateContent{
   font-family: 'Inter', sans-serif;
   margin: auto;
-  padding: 50px 25px;
+  padding: 80px 25px 80px 25px;
   max-width: 900px;
 }
 .bodyTemplateContentTitle{

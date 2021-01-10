@@ -1,6 +1,6 @@
 @media (max-width: 980px) {
   body{
-    padding-bottom: 418.5px;
+    padding-bottom: 478.5px;
   }
   #tHeaderIndex > nav {
     display: none;
@@ -13,7 +13,7 @@
     justify-content: center;
   }
   #tFooterIndexDescSuscribe{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
   #tFooterIndexAbout{
     width: 100%;
@@ -42,7 +42,7 @@
 }
 @media (max-width: 750px){
   body{
-    padding-bottom: 442.5px;
+    padding-bottom: 502.5px;
   }
   #tFooterIndexAbout{
     justify-content: space-between;
@@ -50,5 +50,8 @@
   .bodyIndexContent{
     padding-left: 25px;
     padding-right: 25px;
+  }
+  .bodyIndexContentCard{
+    width: 100%;
   }
 }
