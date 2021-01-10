@@ -67,4 +67,8 @@
   .bodyBlogPost{
     padding-left: 10px;
   }
+  #bodyTheme{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }

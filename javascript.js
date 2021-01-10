@@ -44,8 +44,8 @@ button.addEventListener("click", function(){
         });
     });
     //
-    var delayBecauseFirebase = 1000 ;
-    function sendText(){
+    // var delayBecauseFirebase = 1000 ;
+    // function sendText(){
       // var messagesInJ = document.getElementsByClassName("messagesIn");
       // var info = messagesInJ[1].innerText; //Here you have your text
       // var range = document.createRange();
@@ -57,10 +57,10 @@ button.addEventListener("click", function(){
       //
       // document.execCommand("copy");
       // console.log("Hello " + who);
-    }
-    var who = 0;
-    var buttonShowJ = document.getElementsByClassName("buttonShow");
-    function addClickListener() {
+    // }
+    // var who = 0;
+    // var buttonShowJ = document.getElementsByClassName("buttonShow");
+    // function addClickListener() {
       // if(buttonShowJ){
       //   var i = 0;
       //   while( i < buttonShowJ.length){
@@ -72,7 +72,7 @@ button.addEventListener("click", function(){
       //   console.error("Copy button not found");
       // }
     }
-    setTimeout(addClickListener, delayBecauseFirebase);
+    // setTimeout(addClickListener, delayBecauseFirebase);
 
 
 
