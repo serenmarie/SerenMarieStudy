@@ -5,8 +5,12 @@
   #tHeaderIndex > nav {
     display: none;
   }
+  /*footer*/
   #tFooterIndex{
     flex-direction: column;
+  }
+  #tFooterIndexDescSuscribe{
+    justify-content: center;
   }
   #tFooterIndexDescSuscribe{
     margin-bottom: 40px;
@@ -17,13 +21,8 @@
   }
   .tFooterIndexAboutCard{
     margin-left: 0;
-  }
-  .tFooterIndexAboutCard{
     text-align: center;
   }
-  /*body*/
-  
-  /*footer*/
   #footerIndex{
     padding-left: 30px;
     padding-right: 30px;
@@ -31,15 +30,25 @@
   #tFooterIndexDesc{
     margin-right: 0;
   }
-}
-@media (max-width: 750px){
-  body{
-    padding-bottom: 442.5px;
-  }
   #tFooterIndexDescSuscribe > input{
     width: 60%;
   }
   #tFooterIndexDescSuscribe > button{
     width: 40%;
+  }
+  #sHeaderIndex{
+    width: 95%;
+  }
+}
+@media (max-width: 750px){
+  body{
+    padding-bottom: 442.5px;
+  }
+  #tFooterIndexAbout{
+    justify-content: space-between;
+  }
+  .bodyIndexContent{
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }

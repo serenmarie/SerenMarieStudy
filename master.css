@@ -149,6 +149,7 @@ body{
   margin: auto;
   display: flex;
   padding-top: 75px;
+  padding-bottom: 75px;
   max-width: 1200px;
   justify-content: center;
 }
