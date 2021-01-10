@@ -60,4 +60,8 @@
   #tsFooterIndex{
     justify-content: center;
   }
+  #bodyChat, #bodyBlog{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
