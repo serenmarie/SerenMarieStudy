@@ -71,7 +71,7 @@ button.addEventListener("click", function(){
       // }else{
       //   console.error("Copy button not found");
       // }
-    //}
+    // }
     // setTimeout(addClickListener, delayBecauseFirebase);
 
 

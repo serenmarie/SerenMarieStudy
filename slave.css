@@ -280,21 +280,20 @@
   right: 0;
   height: 44px;
   width: 80px;
-  background: transparent;
+  background: none;
   color: #ffffff;
   opacity: 0;
   border-bottom-left-radius: 9px;
   font-size: 17px;
   font-weight: 600;
   transition: opacity 0.155s;
-  /* font-family: 'Inter', sans-serif; */
 }
 #bodyChatHisMes > li > button:hover{
   text-decoration: underline;
   color: #fa7a7f;
 }
 #bodyChatHisMes > li::-webkit-scrollbar{
-  background: grey;
+  background: none; /*!Cuidado*/
   height: 0px;
 }
 #bodyChatSen{
