@@ -54,4 +54,10 @@
   .bodyIndexContentCard{
     width: 100%;
   }
+  #tsFooterIndex > p{
+    display: none;
+  }
+  #tsFooterIndex{
+    justify-content: center;
+  }
 }
