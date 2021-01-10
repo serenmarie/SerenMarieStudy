@@ -22,7 +22,7 @@
     text-align: center;
   }
   /*body*/
-
+  
   /*footer*/
   #footerIndex{
     padding-left: 30px;
@@ -33,5 +33,13 @@
   }
 }
 @media (max-width: 750px){
-
+  body{
+    padding-bottom: 442.5px;
+  }
+  #tFooterIndexDescSuscribe > input{
+    width: 60%;
+  }
+  #tFooterIndexDescSuscribe > button{
+    width: 40%;
+  }
 }
