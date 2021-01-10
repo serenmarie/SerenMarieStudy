@@ -70,6 +70,7 @@
   }
   .bodyBlogPost{
     padding-left: 10px;
+    padding-right: 10px;
   }
   #bodyTheme{
     padding-left: 15px;
@@ -78,5 +79,8 @@
   .bodyTemplateContent{
     padding-left: 15px;
     padding-right: 15px;
+  }
+  #bodyChatHisMes > li{
+    margin-bottom: 16px;
   }
 }
