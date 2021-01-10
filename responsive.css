@@ -64,13 +64,17 @@
   #tsFooterIndex{
     justify-content: center;
   }
-  #bodyChat, #bodyBlog{
+  #bodyChat{
     padding-left: 15px;
     padding-right: 15px;
   }
+  #bodyBlog{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
   .bodyBlogPost{
     padding-left: 10px;
-    padding-right: 0px;
+    padding-right: 10px;
   }
   #bodyTheme{
     padding-left: 15px;
