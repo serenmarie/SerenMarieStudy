@@ -74,9 +74,7 @@ button.addEventListener("click", function(){
     // }
     // setTimeout(addClickListener, delayBecauseFirebase);
 
-
-
-
+    // Lateral Menu
 
 
 

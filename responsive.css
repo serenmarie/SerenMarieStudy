@@ -1,9 +1,24 @@
 @media (max-width: 980px) {
+  #sHeaderIndex{
+    width: 100%;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
   body{
     padding-bottom: 478.5px;
   }
+  #tHeaderIndex > p{
+    margin-left: 45px;
+  }
+  #tHeaderIndexB{
+    display: flex;
+  }
   #tHeaderIndex > nav {
     display: none;
+  }
+  #headerBodyLateral{
+    /* display: flex; */
+    /* flex-direction: column; */
   }
   /*footer*/
   #tFooterIndex{
@@ -35,9 +50,6 @@
   }
   #tFooterIndexDescSuscribe > button{
     width: 40%;
-  }
-  #sHeaderIndex{
-    width: 95%;
   }
 }
 @media (max-width: 750px){
