@@ -208,7 +208,7 @@ body{
   display: flex;
   flex-direction: column;
   position: absolute;
-  height: 100vh;
+  height: calc(100vh + 66px);
   width: auto;
   top: 0;
   left: -250.484px;
