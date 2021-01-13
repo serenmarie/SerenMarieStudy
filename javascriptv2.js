@@ -24,7 +24,7 @@
             buttonMenu.style.display = "flex";
             body.style.overflow = "visible";
             lateralMenu.style.animation = ".2s moveMenuv2 forwards";
-            buttonBig.style.animation = "8s buttonMagicv2";
+            // buttonBig.style.animation = "buttonMagicv2";
             buttonBig.style.display = "none";
           });
           buttonBig.addEventListener("click",function(){
@@ -55,3 +55,34 @@
         }
         verSizeWindow(x);
         x.addListener(verSizeWindow);
+
+
+        // if((lastScrollTop - st) > 0){
+        //   document.getElementById("headerIndex").style.top = "0";
+        //   // document.getElementById("headerIndex").style.borderBottom = "1px solid #3a3b3c";
+        //   document.getElementById("headerIndex").style.boxShadow= "0px -2px 10px rgba(0, 0, 0, 1)";
+        //   if(st == 0){
+        //     // document.getElementById("headerIndex").style.borderBottom = "none";
+        //     document.getElementById("headerIndex").style.boxShadow= "none";
+        //   }
+        // }
+
+
+
+        var lastScrollTop = 0;
+        window.addEventListener("scroll", function(){
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+          if (st > lastScrollTop){
+            document.getElementById("headerIndex").style.top = "-100%";
+          } else {
+            document.getElementById("headerIndex").style.top = "0";
+            // document.getElementById("headerIndex").style.borderBottom = "1px solid #3a3b3c";
+            document.getElementById("headerIndex").style.boxShadow= "0px -2px 10px rgba(0, 0, 0, 1)";
+            if(st == 0){
+              // document.getElementById("headerIndex").style.borderBottom = "none";
+              document.getElementById("headerIndex").style.boxShadow= "none";
+            }
+          }
+          // console.log(st);
+          lastScrollTop = st;
+        }, false);

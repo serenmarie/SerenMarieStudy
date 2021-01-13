@@ -43,6 +43,7 @@ body{
   flex-direction: column;
   min-height: 100vh;
   padding-bottom: 266px; /* Altura del footer */
+  padding-top: 66px;
   background: #1a1a1a;
   color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
@@ -50,9 +51,16 @@ body{
 }
 /* header */
 #headerIndex{
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   width: 100%;
+  background: #1a1a1a;
+  z-index: 80;
+  -webkit-transition: top .28s;
+  transition: top .28s;
 }
 #sHeaderIndex{
   display: flex;
@@ -206,9 +214,10 @@ body{
 }
 #headerBodyLateral{
   display: flex;
+  position: fixed;
   flex-direction: column;
-  position: absolute;
-  height: calc(100vh + 66px);
+  /* height: calc(100vh + 66px); */
+  height: 100vh;
   width: auto;
   top: 0;
   left: -250.484px;
@@ -233,7 +242,7 @@ body{
 }
 #headerBodyLateralOp{
   display: none;
-  position: absolute;
+  position: fixed;
   /* width: calc(100vw - 268.484px); */
   height: 100vh;
   width: calc(100vw);
